@@ -27,64 +27,82 @@ print("="*60)
 # Konsep: Bilangan genap habis dibagi 2 (sisa 0)
 #         Bilangan ganjil tidak habis dibagi 2 (sisa 1)
 
-angka = int(input("Masukkan sebuah angka: "))
+# Contoh dengan beberapa angka
+angka_list = [10, 15, 22, 7]
+print(f"Mengecek angka: {angka_list}")
+print()
 
-if angka % 2 == 0:
-    print(f"{angka} adalah bilangan GENAP")
-    print(f"Karena {angka} % 2 = {angka % 2} (habis dibagi 2)")
-else:
-    print(f"{angka} adalah bilangan GANJIL")
-    print(f"Karena {angka} % 2 = {angka % 2} (tidak habis dibagi 2)")
+for angka in angka_list:
+    if angka % 2 == 0:
+        print(f"{angka} adalah bilangan GENAP (karena {angka} % 2 = {angka % 2})")
+    else:
+        print(f"{angka} adalah bilangan GANJIL (karena {angka} % 2 = {angka % 2})")
 
 print("\n" + "="*60)
 print("CONTOH 2: DETEKSI KELIPATAN")
 print("="*60)
 
-bilangan = int(input("Masukkan bilangan: "))
-pembagi = int(input("Cek kelipatan dari: "))
+# Contoh pengecekan kelipatan
+bilangan = 24
+pembagi = 6
 
+print(f"Cek apakah {bilangan} kelipatan dari {pembagi}:")
 if bilangan % pembagi == 0:
-    print(f"{bilangan} adalah KELIPATAN dari {pembagi}")
-    print(f"Karena {bilangan} % {pembagi} = {bilangan % pembagi}")
+    print(f"[YA] {bilangan} adalah KELIPATAN dari {pembagi}")
+    print(f"     Karena {bilangan} % {pembagi} = {bilangan % pembagi}")
 else:
-    print(f"{bilangan} BUKAN kelipatan dari {pembagi}")
-    print(f"Karena {bilangan} % {pembagi} = {bilangan % pembagi} (ada sisa)")
+    print(f"[TIDAK] {bilangan} BUKAN kelipatan dari {pembagi}")
+    print(f"        Karena {bilangan} % {pembagi} = {bilangan % pembagi} (ada sisa)")
+
+# Contoh lain
+print()
+bilangan = 25
+pembagi = 6
+print(f"Cek apakah {bilangan} kelipatan dari {pembagi}:")
+if bilangan % pembagi == 0:
+    print(f"[YA] {bilangan} adalah KELIPATAN dari {pembagi}")
+    print(f"     Karena {bilangan} % {pembagi} = {bilangan % pembagi}")
+else:
+    print(f"[TIDAK] {bilangan} BUKAN kelipatan dari {pembagi}")
+    print(f"        Karena {bilangan} % {pembagi} = {bilangan % pembagi} (ada sisa)")
 
 print("\n" + "="*60)
 print("CONTOH 3: KLASIFIKASI BILANGAN LENGKAP")
 print("="*60)
 
-angka = int(input("Masukkan sebuah bilangan bulat: "))
+# Contoh analisis beberapa bilangan
+angka_test = [15, -8, 0, 30]
 
-print(f"\nAnalisis bilangan {angka}:")
-print("-" * 60)
-
-# 1. Positif, Negatif, atau Nol
-if angka > 0:
-    print("✓ Bilangan POSITIF")
-elif angka < 0:
-    print("✓ Bilangan NEGATIF")
-else:
-    print("✓ Bilangan NOL")
-
-# 2. Ganjil atau Genap (hanya untuk bilangan bukan nol)
-if angka != 0:
-    if angka % 2 == 0:
-        print("✓ Bilangan GENAP")
+for angka in angka_test:
+    print(f"\nAnalisis bilangan {angka}:")
+    print("-" * 40)
+    
+    # 1. Positif, Negatif, atau Nol
+    if angka > 0:
+        print("- Bilangan POSITIF")
+    elif angka < 0:
+        print("- Bilangan NEGATIF")
     else:
-        print("✓ Bilangan GANJIL")
-
-# 3. Kelipatan 3
-if angka % 3 == 0 and angka != 0:
-    print("✓ Kelipatan 3")
-
-# 4. Kelipatan 5
-if angka % 5 == 0 and angka != 0:
-    print("✓ Kelipatan 5")
-
-# 5. Kelipatan 3 DAN 5 (kelipatan 15)
-if angka % 3 == 0 and angka % 5 == 0 and angka != 0:
-    print("✓ Kelipatan 15 (kelipatan 3 DAN 5)")
+        print("- Bilangan NOL")
+    
+    # 2. Ganjil atau Genap (hanya untuk bilangan bukan nol)
+    if angka != 0:
+        if angka % 2 == 0:
+            print("- Bilangan GENAP")
+        else:
+            print("- Bilangan GANJIL")
+    
+    # 3. Kelipatan 3
+    if angka % 3 == 0 and angka != 0:
+        print("- Kelipatan 3")
+    
+    # 4. Kelipatan 5
+    if angka % 5 == 0 and angka != 0:
+        print("- Kelipatan 5")
+    
+    # 5. Kelipatan 3 DAN 5 (kelipatan 15)
+    if angka % 3 == 0 and angka % 5 == 0 and angka != 0:
+        print("- Kelipatan 15 (kelipatan 3 DAN 5)")
 
 print("\n" + "="*60)
 print("CONTOH 4: APLIKASI FIZZBUZZ")
@@ -97,7 +115,9 @@ print("- Jika kelipatan 3 DAN 5: cetak 'FizzBuzz'")
 print("- Selain itu: cetak angkanya")
 print("-" * 60)
 
-batas = int(input("Tampilkan FizzBuzz sampai angka: "))
+batas = 20
+print(f"FizzBuzz dari 1 sampai {batas}:")
+print()
 
 for i in range(1, batas + 1):
     if i % 3 == 0 and i % 5 == 0:
@@ -113,19 +133,23 @@ print("\n" + "="*60)
 print("CONTOH 5: MENDAPATKAN DIGIT TERAKHIR")
 print("="*60)
 
-angka = int(input("Masukkan angka: "))
-digit_terakhir = angka % 10
+# Contoh pengambilan digit terakhir
+angka_contoh = [1234, 567, 89, 4321]
+print(f"Mengambil digit terakhir dari: {angka_contoh}")
+print()
 
-print(f"Digit terakhir dari {angka} adalah {digit_terakhir}")
-print(f"Karena {angka} % 10 = {digit_terakhir}")
+for angka in angka_contoh:
+    digit_terakhir = angka % 10
+    print(f"Digit terakhir dari {angka} adalah {digit_terakhir}")
+    
+    # Aplikasi: Cek apakah digit terakhir genap atau ganjil
+    if digit_terakhir % 2 == 0:
+        print(f"  -> Digit terakhir ({digit_terakhir}) adalah GENAP")
+    else:
+        print(f"  -> Digit terakhir ({digit_terakhir}) adalah GANJIL")
+    print()
 
-# Aplikasi: Cek apakah digit terakhir genap atau ganjil
-if digit_terakhir % 2 == 0:
-    print(f"Digit terakhir ({digit_terakhir}) adalah GENAP")
-else:
-    print(f"Digit terakhir ({digit_terakhir}) adalah GANJIL")
-
-print("\n" + "="*60)
+print("="*60)
 print("RANGKUMAN OPERATOR MODULO")
 print("="*60)
 print("Kegunaan operator modulo (%):")
