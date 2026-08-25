@@ -1,0 +1,545 @@
+\documentclass[12pt,a4paper]{article}
+
+% Package imports
+\usepackage[utf8]{inputenc}
+\usepackage[indonesian]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{times}
+
+% Page geometry
+\geometry{
+    left=3cm,
+    right=3cm,
+    top=2.5cm,
+    bottom=2.5cm
+}
+
+% Set font to Times New Roman
+\renewcommand{\rmdefault}{ptm}
+\renewcommand{\familydefault}{\rmdefault}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Modul 3: Python Lanjutan}
+\fancyhead[R]{MORRIS IF 2026}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Code listing style
+\lstdefinestyle{pythonstyle}{
+    language=Python,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\bfseries,
+    commentstyle=\itshape,
+    stringstyle=\ttfamily,
+    numbers=left,
+    numberstyle=\tiny,
+    stepnumber=1,
+    numbersep=8pt,
+    backgroundcolor=\color{gray!10},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=single,
+    tabsize=4,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    escapeinside={(*@}{@*)}
+}
+
+\lstset{style=pythonstyle}
+
+% Section formatting - plain black
+\titleformat{\section}
+    {\normalfont\Large\bfseries}
+    {\thesection}{1em}{}
+
+\titleformat{\subsection}
+    {\normalfont\large\bfseries}
+    {\thesubsection}{1em}{}
+
+% Hyperlink setup - black links
+\hypersetup{
+    colorlinks=false,
+    linkcolor=black,
+    urlcolor=black,
+    citecolor=black,
+    pdfborder={0 0 0}
+}
+
+% Custom boxes - simple style
+\newtcolorbox{infobox}{
+    colback=white,
+    colframe=black,
+    title=Informasi Penting,
+    fonttitle=\bfseries
+}
+
+\newtcolorbox{warningbox}{
+    colback=white,
+    colframe=black,
+    title=Perhatian,
+    fonttitle=\bfseries
+}
+
+\newtcolorbox{tipbox}{
+    colback=white,
+    colframe=black,
+    title=Tips,
+    fonttitle=\bfseries
+}
+
+% Document information
+\title{
+    \vspace{-2cm}
+    % \includegraphics[width=0.3\textwidth]{logo.png}\\[1cm]
+    \textbf{MODUL PEMBELAJARAN}\\[0.5cm]
+    \Large \textbf{Python Lanjutan: Struktur Logika Bertingkat,\\
+    Perulangan, dan Pembangunan Alur Aplikasi Konsol}\\[0.5cm]
+    \large Modul 3 dari 4
+}
+\author{
+    Penyusun: Ridwan \& Bunga\\
+    Panitia MORRIS IF 2026 - Divisi Akademik
+}
+\date{Tahun 2026}
+
+\begin{document}
+
+% ============================================================
+% HALAMAN JUDUL
+% ============================================================
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+% ============================================================
+% DAFTAR ISI
+% ============================================================
+\tableofcontents
+\newpage
+
+% ============================================================
+% BAB 1: IDENTITAS MODUL
+% ============================================================
+\section{Identitas Modul}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Program} & Pelatihan Dasar Pemrograman MORRIS IF \\
+\hline
+\textbf{Penyelenggara} & Panitia MORRIS IF 2026 - Divisi Akademik \\
+\hline
+\textbf{Modul} & Modul 3 dari 4 \\
+\hline
+\textbf{Pekan} & Minggu ke-2 \\
+\hline
+\textbf{Durasi} & 150 menit (menyesuaikan jadwal) \\
+\hline
+\textbf{Tools Utama} & Python 3 + Visual Studio Code, GitHub \\
+\hline
+\textbf{Penyusun} & Ridwan \& Bunga \\
+\hline
+\textbf{Peserta} & Mahasiswa Baru Teknik Informatika \\
+\hline
+\textbf{Keterkaitan} & Melanjutkan Modul 1 dan menjadi bekal teknis utama untuk pengerjaan Tugas Besar pada Modul 4 \\
+\hline
+\end{tabular}
+\end{table}
+
+% ============================================================
+% BAB 2: DESKRIPSI UMUM
+% ============================================================
+\section{Deskripsi Umum}
+
+Modul ini membawa peserta dari sekadar menulis perintah berurutan menuju kemampuan menyusun logika program yang bercabang dan berulang. Materi difokuskan pada percabangan bertingkat (nested) dan perulangan (looping), dua konsep yang menjadi tulang punggung hampir semua aplikasi konsol.
+
+Selain latihan klasik seperti deteksi bilangan prima dan ganjil genap, modul ini juga memperkenalkan cara menyimpan banyak data dalam list serta membungkus perintah berulang ke dalam fungsi. Di bagian akhir, seluruh konsep dirangkai menjadi kerangka menu aplikasi konsol yang akan langsung dipakai peserta pada Tugas Besar minggu berikutnya.
+
+Dengan menguasai materi pada modul ini, peserta akan memiliki fondasi yang kuat untuk membangun aplikasi yang lebih kompleks dan interaktif. Kemampuan untuk mengatur alur program secara dinamis melalui percabangan dan perulangan merupakan keterampilan esensial yang akan terus digunakan dalam pengembangan perangkat lunak di berbagai tingkat kesulitan.
+
+% ============================================================
+% BAB 3: TUJUAN PEMBELAJARAN
+% ============================================================
+\section{Tujuan Pembelajaran}
+
+Setelah mempelajari modul ini, peserta mampu:
+
+\begin{enumerate}[label=\alph*)]
+    \item Menyusun percabangan bertingkat (nested if) untuk menyelesaikan kasus dengan lebih dari satu lapis kondisi.
+    \item Menggunakan perulangan for dan while beserta fungsi range() untuk menjalankan proses berulang.
+    \item Menerapkan operator modulo untuk pengujian bilangan, seperti ganjil genap dan deteksi bilangan prima.
+    \item Menghitung deret aritmatika dan perpangkatan menggunakan perulangan.
+    \item Menyimpan sekumpulan data dalam list dan mengolahnya melalui perulangan.
+    \item Membangun kerangka menu aplikasi konsol yang berjalan berulang dan memvalidasi input pengguna.
+\end{enumerate}
+
+% ============================================================
+% BAB 4: KOMPETENSI AWAL DAN SARANA
+% ============================================================
+\section{Kompetensi Awal dan Sarana}
+
+\subsection{Kompetensi Awal}
+
+Peserta telah menguasai materi dasar pemrograman Python dari Modul 1, yang mencakup:
+
+\begin{itemize}
+    \item Memahami konsep variabel dan tipe data (integer, float, string, boolean)
+    \item Menggunakan operator aritmatika, perbandingan, dan logika
+    \item Menerima input dari pengguna menggunakan fungsi input()
+    \item Melakukan konversi tipe data (type casting)
+    \item Menyusun struktur percabangan sederhana menggunakan if, elif, dan else
+    \item Mengunggah berkas kode ke repositori GitHub (dari Modul 2)
+\end{itemize}
+
+\subsection{Sarana}
+
+Untuk mengikuti pembelajaran pada modul ini, peserta diharapkan memiliki:
+
+\begin{itemize}
+    \item Laptop dengan sistem operasi Windows, macOS, atau Linux
+    \item Python 3.8 atau versi yang lebih baru (sudah terinstal)
+    \item Visual Studio Code dengan ekstensi Python
+    \item Akun GitHub yang sudah aktif dan dikonfigurasi
+    \item Koneksi internet untuk mengakses dokumentasi dan referensi
+\end{itemize}
+
+% ============================================================
+% BAB 5: PERTANYAAN PEMANTIK
+% ============================================================
+\section{Pertanyaan Pemantik}
+
+\begin{itemize}
+    \item Kalau program harus memeriksa 1000 angka, apakah kita menulis 1000 baris kode?
+    \item Bagaimana caranya program tahu bahwa sebuah bilangan adalah bilangan prima, padahal komputer tidak "hafal" tabel prima?
+    \item Kenapa aplikasi yang kita pakai sehari-hari tidak langsung tertutup setelah satu kali dipakai?
+\end{itemize}
+
+% ============================================================
+% BAB 6: MATERI PEMBELAJARAN
+% ============================================================
+\section{Materi Pembelajaran}
+
+% ------------------------------------------------------------
+% 6.1 Peninjauan Ulang Modul 1
+% ------------------------------------------------------------
+\subsection{Peninjauan Ulang Modul 1}
+
+\subsubsection{Ringkasan Variabel, Operator, dan Percabangan}
+
+\subsubsection{Kesalahan Umum pada Tugas Modul 1}
+
+\subsubsection{Kebiasaan Menulis Kode yang Rapi}
+
+% ------------------------------------------------------------
+% 6.2 Percabangan Bertingkat (Nested If)
+% ------------------------------------------------------------
+\subsection{Percabangan Bertingkat (Nested If)}
+
+\subsubsection{Konsep Kondisi di Dalam Kondisi}
+
+\subsubsection{Perbedaan Nested If dan Rangkaian Elif}
+
+\subsubsection{Menjaga Keterbacaan Kode}
+
+\subsubsection{Studi Kasus: Penentuan Kategori dengan Dua Lapis Syarat}
+
+% ------------------------------------------------------------
+% 6.3 Operator Modulo dan Pengujian Bilangan
+% ------------------------------------------------------------
+\subsection{Operator Modulo dan Pengujian Bilangan}
+
+\subsubsection{Memahami Sisa Bagi (\%)}
+
+\subsubsection{Deteksi Bilangan Ganjil dan Genap}
+
+\subsubsection{Deteksi Bilangan Habis Dibagi}
+
+\subsubsection{Studi Kasus: Klasifikasi Bilangan}
+
+% ------------------------------------------------------------
+% 6.4 Perulangan (Looping)
+% ------------------------------------------------------------
+\subsection{Perulangan (Looping)}
+
+\subsubsection{Konsep Perulangan}
+
+\subsubsection{Perulangan For dan Fungsi Range()}
+
+\subsubsection{Variasi Range: Batas Awal, Akhir, dan Langkah}
+
+\subsubsection{Perulangan While}
+
+\subsubsection{Bahaya Infinite Loop}
+
+\subsubsection{Perbandingan For dan While}
+
+% ------------------------------------------------------------
+% 6.5 Kontrol Perulangan
+% ------------------------------------------------------------
+\subsection{Kontrol Perulangan}
+
+\subsubsection{Perintah Break}
+
+\subsubsection{Perintah Continue}
+
+\subsubsection{Variabel Akumulator dan Flag}
+
+% ------------------------------------------------------------
+% 6.6 Perulangan Bersarang (Nested Loop)
+% ------------------------------------------------------------
+\subsection{Perulangan Bersarang (Nested Loop)}
+
+\subsubsection{Konsep Nested Loop}
+
+\subsubsection{Studi Kasus: Pola Bintang dan Tabel Perkalian}
+
+\subsubsection{Menggabungkan Nested Loop dengan Nested If}
+
+% ------------------------------------------------------------
+% 6.7 Studi Kasus Utama: Deteksi Bilangan Prima
+% ------------------------------------------------------------
+\subsection{Studi Kasus Utama: Deteksi Bilangan Prima}
+
+\subsubsection{Definisi Bilangan Prima}
+
+\subsubsection{Algoritma Pemeriksaan Pembagi}
+
+\subsubsection{Implementasi dengan For dan Flag}
+
+\subsubsection{Penanganan Kasus Khusus (0, 1, Negatif)}
+
+\subsubsection{Menampilkan Bilangan Prima dalam Rentang}
+
+% ------------------------------------------------------------
+% 6.8 Studi Kasus: Deret Aritmatika dan Perpangkatan
+% ------------------------------------------------------------
+\subsection{Studi Kasus: Deret Aritmatika dan Perpangkatan}
+
+\subsubsection{Penjumlahan Deret 1 Sampai N}
+
+\subsubsection{Deret Aritmatika dengan Beda Tertentu}
+
+\subsubsection{Perhitungan Perpangkatan Manual}
+
+\subsubsection{Perbandingan dengan Rumus Langsung}
+
+% ------------------------------------------------------------
+% 6.9 Menyimpan Banyak Data dengan List
+% ------------------------------------------------------------
+\subsection{Menyimpan Banyak Data dengan List}
+
+\subsubsection{Konsep List}
+
+\subsubsection{Mengakses Elemen Melalui Indeks}
+
+\subsubsection{Menambah dan Menghapus Elemen}
+
+\subsubsection{Menelusuri List dengan Perulangan}
+
+\subsubsection{Perhitungan: Total, Rata-rata, Max, Min}
+
+% ------------------------------------------------------------
+% 6.10 Fungsi (Def)
+% ------------------------------------------------------------
+\subsection{Fungsi (Def) untuk Merapikan Program}
+
+\subsubsection{Konsep Fungsi}
+
+\subsubsection{Membuat Fungsi dengan Parameter}
+
+\subsubsection{Mengembalikan Nilai dengan Return}
+
+\subsubsection{Memecah Program Menjadi Beberapa Fungsi}
+
+% ------------------------------------------------------------
+% 6.11 Kerangka Aplikasi Konsol
+% ------------------------------------------------------------
+\subsection{Merangkai Menjadi Kerangka Aplikasi Konsol}
+
+\subsubsection{Struktur Menu Utama dengan While True}
+
+\subsubsection{Memilih Fitur Melalui Input}
+
+\subsubsection{Validasi Input}
+
+\subsubsection{Opsi Keluar dari Program}
+
+\subsubsection{Merapikan Tampilan Terminal}
+
+% ============================================================
+% BAB 7: LATIHAN DAN TUGAS
+% ============================================================
+\section{Latihan dan Tugas}
+
+\subsection{Latihan Individu}
+
+% ------------------------------------------------------------
+% Latihan 1
+% ------------------------------------------------------------
+\subsubsection{Latihan 1: Deteksi Bilangan Prima (latihan3\_prima.py)}
+
+\paragraph{Deskripsi:}
+
+\paragraph{Spesifikasi:}
+\begin{itemize}
+    \item 
+    \item 
+    \item 
+\end{itemize}
+
+\paragraph{Contoh Output:}
+
+\begin{lstlisting}
+# Contoh output program
+\end{lstlisting}
+
+% ------------------------------------------------------------
+% Latihan 2
+% ------------------------------------------------------------
+\subsubsection{Latihan 2: Percabangan Bertingkat (latihan3\_nested.py)}
+
+\paragraph{Deskripsi:}
+
+\paragraph{Spesifikasi:}
+\begin{itemize}
+    \item 
+    \item 
+    \item 
+\end{itemize}
+
+\paragraph{Contoh Output:}
+
+\begin{lstlisting}
+# Contoh output program
+\end{lstlisting}
+
+% ------------------------------------------------------------
+% Latihan 3
+% ------------------------------------------------------------
+\subsubsection{Latihan 3: Deret Aritmatika dan Perpangkatan (latihan3\_deret.py)}
+
+\paragraph{Deskripsi:}
+
+\paragraph{Spesifikasi:}
+\begin{itemize}
+    \item 
+    \item 
+    \item 
+\end{itemize}
+
+\paragraph{Contoh Output:}
+
+\begin{lstlisting}
+# Contoh output program
+\end{lstlisting}
+
+% ------------------------------------------------------------
+% Tugas Mandiri
+% ------------------------------------------------------------
+\subsection{Tugas Mandiri}
+
+\subsubsection{Aplikasi Konsol Bermenu (tugas3\_menu.py)}
+
+\paragraph{Deskripsi:}
+
+\paragraph{Spesifikasi:}
+\begin{itemize}
+    \item 
+    \item 
+    \item 
+    \item 
+    \item 
+\end{itemize}
+
+\paragraph{Contoh Struktur Menu:}
+
+\begin{lstlisting}
+# Contoh struktur menu
+\end{lstlisting}
+
+\paragraph{Ketentuan Pengumpulan:}
+\begin{itemize}
+    \item 
+    \item 
+    \item 
+\end{itemize}
+
+% ============================================================
+% BAB 8: PENILAIAN
+% ============================================================
+\section{Penilaian Modul 3}
+
+\subsection{Bobot Penilaian}
+
+\begin{table}[h]
+\centering
+\caption{Rincian Penilaian Modul 3}
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Komponen} & \textbf{Poin} \\
+\hline
+Kehadiran dan keaktifan sesi & 2 \\
+\hline
+Latihan 1 - deteksi prima dan ganjil genap & 4 \\
+\hline
+Latihan 2 - struktur logika nested & 3 \\
+\hline
+Latihan 3 - deret aritmatika dan perpangkatan & 3 \\
+\hline
+Tugas Mandiri - aplikasi konsol bermenu & 5 \\
+\hline
+Bukti unggah ke GitHub (minimal 3 commit terpisah) & 3 \\
+\hline
+\textbf{TOTAL} & \textbf{20} \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Catatan Penilaian}
+
+\begin{itemize}
+    \item 
+    \item 
+    \item 
+\end{itemize}
+
+% ============================================================
+% BAB 9: REFERENSI
+% ============================================================
+\section{Referensi}
+
+\begin{itemize}
+    \item 
+    \item 
+    \item 
+\end{itemize}
+
+% ============================================================
+% LAMPIRAN
+% ============================================================
+\newpage
+\section*{Lampiran}
+\addcontentsline{toc}{section}{Lampiran}
+
+\subsection*{Lampiran A: Template Kode}
+
+\subsection*{Lampiran B: Troubleshooting Umum}
+
+\subsection*{Lampiran C: Tips dan Trik}
+
+\end{document}

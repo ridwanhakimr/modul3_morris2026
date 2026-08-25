@@ -1,0 +1,210 @@
+================================================================
+                      MODUL PEMBELAJARAN
+================================================================
+Judul Materi :
+Python Lanjutan: Struktur Logika Bertingkat, Perulangan, dan
+Pembangunan Alur Aplikasi Konsol
+
+----------------------------------------------------------------
+1. IDENTITAS
+----------------------------------------------------------------
+Program        : Pelatihan Dasar Pemrograman MORRIS IF
+Penyelenggara  : Panitia MORRIS IF 26 - Divisi Akademik
+Modul          : Modul 3 dari 4
+Pekan          : Minggu ke-2
+Durasi         : 150 menit (menyesuaikan jadwal)
+Tools Utama    : Python 3 + Visual Studio Code, GitHub
+Penyusun       : Ridwan & Bunga
+Peserta        : Mahasiswa Baru Teknik Informatika
+Keterkaitan    : Melanjutkan Modul 1 dan menjadi bekal teknis utama
+                 untuk pengerjaan Tugas Besar pada Modul 4
+
+----------------------------------------------------------------
+2. DESKRIPSI UMUM
+----------------------------------------------------------------
+Modul ini membawa peserta dari sekadar menulis perintah berurutan
+menuju kemampuan menyusun logika program yang bercabang dan
+berulang. Materi difokuskan pada percabangan bertingkat (nested)
+dan perulangan (looping), dua konsep yang menjadi tulang punggung
+hampir semua aplikasi konsol.
+
+Selain latihan klasik seperti deteksi bilangan prima dan ganjil
+genap, modul ini juga memperkenalkan cara menyimpan banyak data
+dalam list serta membungkus perintah berulang ke dalam fungsi.
+Di bagian akhir, seluruh konsep dirangkai menjadi kerangka menu
+aplikasi konsol yang akan langsung dipakai peserta pada Tugas
+Besar minggu berikutnya.
+
+----------------------------------------------------------------
+3. TUJUAN PEMBELAJARAN
+----------------------------------------------------------------
+Setelah mempelajari modul ini, peserta mampu:
+a) Menyusun percabangan bertingkat (nested if) untuk menyelesaikan
+   kasus dengan lebih dari satu lapis kondisi.
+b) Menggunakan perulangan for dan while beserta fungsi range()
+   untuk menjalankan proses berulang.
+c) Menerapkan operator modulo untuk pengujian bilangan, seperti
+   ganjil genap dan deteksi bilangan prima.
+d) Menghitung deret aritmatika dan perpangkatan menggunakan
+   perulangan.
+e) Menyimpan sekumpulan data dalam list dan mengolahnya melalui
+   perulangan.
+f) Membangun kerangka menu aplikasi konsol yang berjalan berulang
+   dan memvalidasi input pengguna.
+
+----------------------------------------------------------------
+4. KOMPETENSI AWAL & SARANA
+----------------------------------------------------------------
+Kompetensi Awal : Peserta telah menguasai variabel, tipe data,
+                  operator, input pengguna, dan percabangan
+                  If-Else dari Modul 1, serta mampu mengunggah
+                  berkas ke GitHub dari Modul 2.
+Sarana          : Laptop, Python 3, Visual Studio Code, akun
+                  GitHub aktif.
+
+----------------------------------------------------------------
+5. PERTANYAAN PEMANTIK
+----------------------------------------------------------------
+- Kalau program harus memeriksa 1000 angka, apakah kita menulis
+  1000 baris kode?
+- Bagaimana caranya program tahu bahwa sebuah bilangan adalah
+  bilangan prima, padahal komputer tidak "hafal" tabel prima?
+- Kenapa aplikasi yang kita pakai sehari-hari tidak langsung
+  tertutup setelah satu kali dipakai?
+
+----------------------------------------------------------------
+6. STRUKTUR MATERI PEMBELAJARAN
+----------------------------------------------------------------
+
+6.1. Peninjauan Ulang Modul 1
+     6.1.1. Ringkasan variabel, operator, dan percabangan
+     6.1.2. Kesalahan umum yang muncul pada tugas Modul 1
+     6.1.3. Kebiasaan menulis kode yang rapi dan mudah dibaca
+
+6.2. Percabangan Bertingkat (Nested If)
+     6.2.1. Konsep kondisi di dalam kondisi
+     6.2.2. Perbedaan nested if dan rangkaian elif
+     6.2.3. Menjaga keterbacaan agar tidak terlalu dalam
+     6.2.4. Studi kasus: penentuan kategori dengan dua lapis syarat
+
+6.3. Operator Modulo dan Pengujian Bilangan
+     6.3.1. Memahami sisa bagi (%) dan maknanya
+     6.3.2. Deteksi bilangan ganjil dan genap
+     6.3.3. Deteksi bilangan habis dibagi suatu nilai
+     6.3.4. Studi kasus: klasifikasi bilangan positif, negatif, nol
+
+6.4. Perulangan (Looping)
+     6.4.1. Konsep perulangan dan kapan dibutuhkan
+     6.4.2. Perulangan for dan fungsi range()
+     6.4.3. Variasi range: batas awal, batas akhir, dan langkah
+     6.4.4. Perulangan while dan kondisi berhenti
+     6.4.5. Bahaya perulangan tak berujung (infinite loop)
+     6.4.6. Perbandingan kapan memakai for dan kapan memakai while
+
+6.5. Kontrol Perulangan
+     6.5.1. Perintah break untuk menghentikan perulangan
+     6.5.2. Perintah continue untuk melewati satu putaran
+     6.5.3. Variabel penampung (akumulator) dan variabel penanda
+            (flag)
+
+6.6. Perulangan Bersarang (Nested Loop)
+     6.6.1. Konsep perulangan di dalam perulangan
+     6.6.2. Studi kasus: pola bintang dan tabel perkalian
+     6.6.3. Menggabungkan nested loop dengan nested if
+
+6.7. Studi Kasus Utama: Deteksi Bilangan Prima
+     6.7.1. Definisi bilangan prima dan cara kerja logikanya
+     6.7.2. Menyusun algoritma pemeriksaan pembagi
+     6.7.3. Implementasi menggunakan for dan flag
+     6.7.4. Penyempurnaan: penanganan bilangan 0, 1, dan negatif
+     6.7.5. Pengembangan: menampilkan seluruh bilangan prima dalam
+            suatu rentang
+
+6.8. Studi Kasus: Deret Aritmatika dan Perpangkatan
+     6.8.1. Penjumlahan deret 1 sampai n dengan perulangan
+     6.8.2. Deret aritmatika dengan beda tertentu
+     6.8.3. Perhitungan perpangkatan secara manual dengan
+            perulangan
+     6.8.4. Perbandingan hasil perulangan dengan rumus langsung
+
+6.9. Menyimpan Banyak Data dengan List
+     6.9.1. Konsep list sebagai kumpulan nilai
+     6.9.2. Mengakses elemen melalui indeks
+     6.9.3. Menambah dan menghapus elemen
+     6.9.4. Menelusuri list dengan perulangan
+     6.9.5. Perhitungan sederhana: total, rata-rata, nilai
+            tertinggi dan terendah
+
+6.10. Fungsi (Def) untuk Merapikan Program
+     6.10.1. Konsep fungsi dan alasan penggunaannya
+     6.10.2. Membuat fungsi dengan parameter
+     6.10.3. Mengembalikan nilai dengan return
+     6.10.4. Memecah program panjang menjadi beberapa fungsi
+
+6.11. Merangkai Menjadi Kerangka Aplikasi Konsol
+     6.11.1. Struktur menu utama dengan while True
+     6.11.2. Memilih fitur melalui input pengguna
+     6.11.3. Validasi input agar program tidak berhenti mendadak
+     6.11.4. Opsi keluar dari program
+     6.11.5. Merapikan tampilan terminal agar mudah dibaca
+
+----------------------------------------------------------------
+7. LATIHAN DAN TUGAS
+----------------------------------------------------------------
+LATIHAN INDIVIDU (dikerjakan saat sesi berlangsung)
+   Latihan 1 - latihan3_prima.py
+     Program menerima satu bilangan dari pengguna dan menentukan
+     apakah bilangan tersebut prima, sekaligus menampilkan status
+     ganjil atau genap.
+
+   Latihan 2 - latihan3_nested.py
+     Program dengan minimal dua lapis kondisi, misalnya penentuan
+     kelulusan berdasarkan nilai dan kehadiran.
+
+   Latihan 3 - latihan3_deret.py
+     Program menghitung jumlah deret aritmatika sampai batas yang
+     ditentukan pengguna, dan menampilkan hasil perpangkatan
+     menggunakan perulangan.
+
+TUGAS MANDIRI (dikerjakan di luar sesi)
+   Nama Berkas : tugas3_menu.py
+   Ketentuan   : Menggabungkan ketiga latihan di atas menjadi satu
+                 aplikasi konsol bermenu yang berjalan berulang
+                 sampai pengguna memilih keluar. Seluruh nilai
+                 harus berasal dari input pengguna.
+   Pengumpulan : Diunggah ke repositori GitHub pribadi.
+
+----------------------------------------------------------------
+8. PENILAIAN MODUL 3
+----------------------------------------------------------------
+Bobot Modul 3 terhadap nilai akhir : 20 poin
+
+  KOMPONEN                                            POIN
+  --------------------------------------------------------
+  Kehadiran dan keaktifan sesi                          2
+  Latihan 1 - deteksi prima dan ganjil genap            4
+  Latihan 2 - struktur logika nested                    3
+  Latihan 3 - deret aritmatika dan perpangkatan         3
+  Tugas Mandiri - aplikasi konsol bermenu yang
+    berjalan tanpa error                                5
+  Bukti unggah ke GitHub: minimal 3 commit terpisah
+    (tidak boleh sekali unggah untuk semua berkas)      3
+  --------------------------------------------------------
+  TOTAL                                                20
+
+Catatan penilaian:
+- Setiap latihan yang dikerjakan dan berhasil dijalankan langsung
+  mendapat poin penuh pada komponennya.
+- Program yang berhenti karena input tidak valid tidak kehilangan
+  poin, namun peserta yang menambahkan validasi input mendapat
+  tambahan 2 poin apresiasi.
+- Nilai hasil menyalin utuh pekerjaan peserta lain dinilai nol
+  pada komponen latihan dan tugas.
+
+----------------------------------------------------------------
+9. REFERENSI
+----------------------------------------------------------------
+(diisi oleh penyusun modul - dokumentasi resmi Python dan sumber
+belajar pendukung)
+
+================================================================

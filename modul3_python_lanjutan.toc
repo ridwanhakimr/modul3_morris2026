@@ -1,0 +1,91 @@
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {1}Identitas Modul}{4}{section.1}%
+\contentsline {section}{\numberline {2}Deskripsi Umum}{4}{section.2}%
+\contentsline {section}{\numberline {3}Tujuan Pembelajaran}{4}{section.3}%
+\contentsline {section}{\numberline {4}Kompetensi Awal dan Sarana}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Kompetensi Awal}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Sarana}{5}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Pertanyaan Pemantik}{5}{section.5}%
+\contentsline {section}{\numberline {6}Materi Pembelajaran}{6}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Peninjauan Ulang Modul 1}{6}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Ringkasan Variabel, Operator, dan Percabangan}{6}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Kesalahan Umum pada Tugas Modul 1}{6}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Kebiasaan Menulis Kode yang Rapi}{6}{subsubsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.2}Percabangan Bertingkat (Nested If)}{6}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Konsep Kondisi di Dalam Kondisi}{6}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Perbedaan Nested If dan Rangkaian Elif}{6}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Menjaga Keterbacaan Kode}{6}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}Studi Kasus: Penentuan Kategori dengan Dua Lapis Syarat}{6}{subsubsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.3}Operator Modulo dan Pengujian Bilangan}{6}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Memahami Sisa Bagi (\%)}{6}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Deteksi Bilangan Ganjil dan Genap}{6}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}Deteksi Bilangan Habis Dibagi}{6}{subsubsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.4}Studi Kasus: Klasifikasi Bilangan}{6}{subsubsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.4}Perulangan (Looping)}{6}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Konsep Perulangan}{6}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Perulangan For dan Fungsi Range()}{6}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.3}Variasi Range: Batas Awal, Akhir, dan Langkah}{6}{subsubsection.6.4.3}%
+\contentsline {subsubsection}{\numberline {6.4.4}Perulangan While}{6}{subsubsection.6.4.4}%
+\contentsline {subsubsection}{\numberline {6.4.5}Bahaya Infinite Loop}{6}{subsubsection.6.4.5}%
+\contentsline {subsubsection}{\numberline {6.4.6}Perbandingan For dan While}{6}{subsubsection.6.4.6}%
+\contentsline {subsection}{\numberline {6.5}Kontrol Perulangan}{6}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Perintah Break}{6}{subsubsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.2}Perintah Continue}{6}{subsubsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.3}Variabel Akumulator dan Flag}{6}{subsubsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.6}Perulangan Bersarang (Nested Loop)}{6}{subsection.6.6}%
+\contentsline {subsubsection}{\numberline {6.6.1}Konsep Nested Loop}{6}{subsubsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.2}Studi Kasus: Pola Bintang dan Tabel Perkalian}{6}{subsubsection.6.6.2}%
+\contentsline {subsubsection}{\numberline {6.6.3}Menggabungkan Nested Loop dengan Nested If}{6}{subsubsection.6.6.3}%
+\contentsline {subsection}{\numberline {6.7}Studi Kasus Utama: Deteksi Bilangan Prima}{6}{subsection.6.7}%
+\contentsline {subsubsection}{\numberline {6.7.1}Definisi Bilangan Prima}{6}{subsubsection.6.7.1}%
+\contentsline {subsubsection}{\numberline {6.7.2}Algoritma Pemeriksaan Pembagi}{6}{subsubsection.6.7.2}%
+\contentsline {subsubsection}{\numberline {6.7.3}Implementasi dengan For dan Flag}{6}{subsubsection.6.7.3}%
+\contentsline {subsubsection}{\numberline {6.7.4}Penanganan Kasus Khusus (0, 1, Negatif)}{6}{subsubsection.6.7.4}%
+\contentsline {subsubsection}{\numberline {6.7.5}Menampilkan Bilangan Prima dalam Rentang}{6}{subsubsection.6.7.5}%
+\contentsline {subsection}{\numberline {6.8}Studi Kasus: Deret Aritmatika dan Perpangkatan}{6}{subsection.6.8}%
+\contentsline {subsubsection}{\numberline {6.8.1}Penjumlahan Deret 1 Sampai N}{6}{subsubsection.6.8.1}%
+\contentsline {subsubsection}{\numberline {6.8.2}Deret Aritmatika dengan Beda Tertentu}{6}{subsubsection.6.8.2}%
+\contentsline {subsubsection}{\numberline {6.8.3}Perhitungan Perpangkatan Manual}{6}{subsubsection.6.8.3}%
+\contentsline {subsubsection}{\numberline {6.8.4}Perbandingan dengan Rumus Langsung}{6}{subsubsection.6.8.4}%
+\contentsline {subsection}{\numberline {6.9}Menyimpan Banyak Data dengan List}{6}{subsection.6.9}%
+\contentsline {subsubsection}{\numberline {6.9.1}Konsep List}{6}{subsubsection.6.9.1}%
+\contentsline {subsubsection}{\numberline {6.9.2}Mengakses Elemen Melalui Indeks}{6}{subsubsection.6.9.2}%
+\contentsline {subsubsection}{\numberline {6.9.3}Menambah dan Menghapus Elemen}{6}{subsubsection.6.9.3}%
+\contentsline {subsubsection}{\numberline {6.9.4}Menelusuri List dengan Perulangan}{6}{subsubsection.6.9.4}%
+\contentsline {subsubsection}{\numberline {6.9.5}Perhitungan: Total, Rata-rata, Max, Min}{6}{subsubsection.6.9.5}%
+\contentsline {subsection}{\numberline {6.10}Fungsi (Def) untuk Merapikan Program}{6}{subsection.6.10}%
+\contentsline {subsubsection}{\numberline {6.10.1}Konsep Fungsi}{6}{subsubsection.6.10.1}%
+\contentsline {subsubsection}{\numberline {6.10.2}Membuat Fungsi dengan Parameter}{6}{subsubsection.6.10.2}%
+\contentsline {subsubsection}{\numberline {6.10.3}Mengembalikan Nilai dengan Return}{6}{subsubsection.6.10.3}%
+\contentsline {subsubsection}{\numberline {6.10.4}Memecah Program Menjadi Beberapa Fungsi}{6}{subsubsection.6.10.4}%
+\contentsline {subsection}{\numberline {6.11}Merangkai Menjadi Kerangka Aplikasi Konsol}{6}{subsection.6.11}%
+\contentsline {subsubsection}{\numberline {6.11.1}Struktur Menu Utama dengan While True}{6}{subsubsection.6.11.1}%
+\contentsline {subsubsection}{\numberline {6.11.2}Memilih Fitur Melalui Input}{6}{subsubsection.6.11.2}%
+\contentsline {subsubsection}{\numberline {6.11.3}Validasi Input}{6}{subsubsection.6.11.3}%
+\contentsline {subsubsection}{\numberline {6.11.4}Opsi Keluar dari Program}{6}{subsubsection.6.11.4}%
+\contentsline {subsubsection}{\numberline {6.11.5}Merapikan Tampilan Terminal}{6}{subsubsection.6.11.5}%
+\contentsline {section}{\numberline {7}Latihan dan Tugas}{6}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Latihan Individu}{6}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Latihan 1: Deteksi Bilangan Prima (latihan3\_prima.py)}{6}{subsubsection.7.1.1}%
+\contentsline {paragraph}{Deskripsi:}{6}{subsubsection.7.1.1}%
+\contentsline {paragraph}{Spesifikasi:}{7}{subsubsection.7.1.1}%
+\contentsline {paragraph}{Contoh Output:}{7}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Latihan 2: Percabangan Bertingkat (latihan3\_nested.py)}{7}{subsubsection.7.1.2}%
+\contentsline {paragraph}{Deskripsi:}{7}{subsubsection.7.1.2}%
+\contentsline {paragraph}{Spesifikasi:}{7}{subsubsection.7.1.2}%
+\contentsline {paragraph}{Contoh Output:}{7}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}Latihan 3: Deret Aritmatika dan Perpangkatan (latihan3\_deret.py)}{7}{subsubsection.7.1.3}%
+\contentsline {paragraph}{Deskripsi:}{7}{subsubsection.7.1.3}%
+\contentsline {paragraph}{Spesifikasi:}{7}{subsubsection.7.1.3}%
+\contentsline {paragraph}{Contoh Output:}{7}{subsubsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.2}Tugas Mandiri}{7}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Aplikasi Konsol Bermenu (tugas3\_menu.py)}{7}{subsubsection.7.2.1}%
+\contentsline {paragraph}{Deskripsi:}{7}{subsubsection.7.2.1}%
+\contentsline {paragraph}{Spesifikasi:}{8}{subsubsection.7.2.1}%
+\contentsline {paragraph}{Contoh Struktur Menu:}{8}{subsubsection.7.2.1}%
+\contentsline {paragraph}{Ketentuan Pengumpulan:}{8}{lstnumber.-4.1}%
+\contentsline {section}{\numberline {8}Penilaian Modul 3}{8}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Bobot Penilaian}{8}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Catatan Penilaian}{8}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Referensi}{9}{section.9}%
+\contentsline {section}{Lampiran}{10}{section.9}%
