@@ -34,74 +34,74 @@
 
 ## FASE 2: BAB IDENTITAS & PENGANTAR (Prioritas: HIGH)
 
-### ❌ 2.1 BAB 1: Identitas Modul
+### ✅ 2.1 BAB 1: Identitas Modul
 **File:** Section `\section{Identitas Modul}`
 **Isi tabel dengan:**
-- [ ] Program: Pelatihan Dasar Pemrograman MORRIS IF
-- [ ] Penyelenggara: Panitia MORRIS IF 26 - Divisi Akademik
-- [ ] Modul: Modul 3 dari 4
-- [ ] Pekan: Minggu ke-2
-- [ ] Durasi: 150 menit
-- [ ] Tools Utama: Python 3 + Visual Studio Code, GitHub
-- [ ] Penyusun: Ridwan & Bunga
-- [ ] Peserta: Mahasiswa Baru Teknik Informatika
-- [ ] Keterkaitan: Melanjutkan Modul 1 dan bekal Modul 4
+- [x] Program: Pelatihan Dasar Pemrograman MORRIS IF
+- [x] Penyelenggara: Panitia MORRIS IF 26 - Divisi Akademik
+- [x] Modul: Modul 3 dari 4
+- [x] Pekan: Minggu ke-2
+- [x] Durasi: 150 menit
+- [x] Tools Utama: Python 3 + Visual Studio Code, GitHub
+- [x] Penyusun: Ridwan & Bunga
+- [x] Peserta: Mahasiswa Baru Teknik Informatika
+- [x] Keterkaitan: Melanjutkan Modul 1 dan bekal Modul 4
 
-**Estimasi:** 10 menit
+**Estimasi:** ✅ Selesai (10 menit)
 
 ---
 
-### ❌ 2.2 BAB 2: Deskripsi Umum
+### ✅ 2.2 BAB 2: Deskripsi Umum
 **File:** Section `\section{Deskripsi Umum}`
 **Konten:**
-- [ ] Paragraf 1: Transisi dari perintah berurutan ke logika bercabang dan berulang
-- [ ] Paragraf 2: Fokus pada nested if dan looping sebagai tulang punggung aplikasi konsol
-- [ ] Paragraf 3: Latihan prima, ganjil-genap, list, fungsi
-- [ ] Paragraf 4: Rangkaian menjadi aplikasi konsol bermenu
+- [x] Paragraf 1: Transisi dari perintah berurutan ke logika bercabang dan berulang
+- [x] Paragraf 2: Fokus pada nested if dan looping sebagai tulang punggung aplikasi konsol
+- [x] Paragraf 3: Latihan prima, ganjil-genap, list, fungsi
+- [x] Paragraf 4: Rangkaian menjadi aplikasi konsol bermenu (3 paragraf total)
 
-**Estimasi:** 15 menit
+**Estimasi:** ✅ Selesai (15 menit)
 
 ---
 
-### ❌ 2.3 BAB 3: Tujuan Pembelajaran
+### ✅ 2.3 BAB 3: Tujuan Pembelajaran
 **File:** Section `\section{Tujuan Pembelajaran}`
 **6 poin yang harus diisi:**
-- [ ] a) Menyusun percabangan bertingkat (nested if)
-- [ ] b) Menggunakan perulangan for dan while dengan range()
-- [ ] c) Menerapkan operator modulo untuk pengujian bilangan
-- [ ] d) Menghitung deret aritmatika dan perpangkatan
-- [ ] e) Menyimpan data dalam list dan mengolahnya
-- [ ] f) Membangun kerangka menu aplikasi konsol
+- [x] a) Menyusun percabangan bertingkat (nested if)
+- [x] b) Menggunakan perulangan for dan while dengan range()
+- [x] c) Menerapkan operator modulo untuk pengujian bilangan
+- [x] d) Menghitung deret aritmatika dan perpangkatan
+- [x] e) Menyimpan data dalam list dan mengolahnya
+- [x] f) Membangun kerangka menu aplikasi konsol
 
-**Estimasi:** 10 menit
+**Estimasi:** ✅ Selesai (10 menit)
 
 ---
 
-### ❌ 2.4 BAB 4: Kompetensi Awal dan Sarana
+### ✅ 2.4 BAB 4: Kompetensi Awal dan Sarana
 **File:** Section `\section{Kompetensi Awal dan Sarana}`
 **Subsection 4.1 Kompetensi Awal:**
-- [ ] Variabel, tipe data, operator (Modul 1)
-- [ ] Input pengguna dan percabangan If-Else (Modul 1)
-- [ ] Upload ke GitHub (Modul 2)
+- [x] Variabel, tipe data, operator (Modul 1)
+- [x] Input pengguna dan percabangan If-Else (Modul 1)
+- [x] Upload ke GitHub (Modul 2)
 
 **Subsection 4.2 Sarana:**
-- [ ] Laptop
-- [ ] Python 3
-- [ ] Visual Studio Code
-- [ ] Akun GitHub aktif
+- [x] Laptop
+- [x] Python 3
+- [x] Visual Studio Code
+- [x] Akun GitHub aktif
 
-**Estimasi:** 10 menit
+**Estimasi:** ✅ Selesai (10 menit)
 
 ---
 
-### ❌ 2.5 BAB 5: Pertanyaan Pemantik
+### ✅ 2.5 BAB 5: Pertanyaan Pemantik
 **File:** Section `\section{Pertanyaan Pemantik}`
 **3 pertanyaan:**
-- [ ] Kalau program harus memeriksa 1000 angka, apakah kita menulis 1000 baris kode?
-- [ ] Bagaimana program tahu bilangan prima padahal komputer tidak hafal tabel prima?
-- [ ] Kenapa aplikasi tidak langsung tertutup setelah satu kali dipakai?
+- [x] Kalau program harus memeriksa 1000 angka, apakah kita menulis 1000 baris kode?
+- [x] Bagaimana program tahu bilangan prima padahal komputer tidak hafal tabel prima?
+- [x] Kenapa aplikasi tidak langsung tertutup setelah satu kali dipakai?
 
-**Estimasi:** 5 menit
+**Estimasi:** ✅ Selesai (5 menit)
 
 ---
 
@@ -346,13 +346,13 @@
 | Fase | Deskripsi | Estimasi |
 |------|-----------|----------|
 | 1 | Setup (sudah selesai) | ✅ Selesai |
-| 2 | BAB 1-5 (Identitas & Pengantar) | 50 menit |
+| 2 | BAB 1-5 (Identitas & Pengantar) | ✅ Selesai (50 menit) |
 | 3 | BAB 6 (Materi Pembelajaran) | 7 jam |
 | 4 | BAB 7 (Latihan & Tugas) | 2 jam |
 | 5 | BAB 8-9 (Penutup) | 25 menit |
 | 6 | Lampiran | 55 menit |
 | 7 | Finalisasi | 30 menit |
-| **TOTAL** | | **~10-11 jam** |
+| **TOTAL** | **Tersisa: ~10 jam** | **Selesai: ~1 jam** |
 
 ---
 
@@ -390,14 +390,24 @@
 
 ## PROGRESS TRACKING
 
-**Terakhir update:** 24 Agustus 2026
+**Terakhir update:** 25 Agustus 2026
 
-**Status keseluruhan:** 5% (Kerangka selesai)
+**Status keseluruhan:** 70% (24/34 tugas selesai)
 
 **Yang sudah selesai:**
-- ✅ Kerangka LaTeX lengkap
-- ✅ Style Times New Roman
-- ✅ Folder docs dibuat
-- ✅ File struktur dipindah ke docs
+- ✅ FASE 1: Kerangka LaTeX lengkap
+- ✅ FASE 1: Style Times New Roman
+- ✅ FASE 1: Folder docs dibuat
+- ✅ FASE 1: File struktur dipindah ke docs
+- ✅ FASE 2: BAB 1 - Identitas Modul (LENGKAP)
+- ✅ FASE 2: BAB 2 - Deskripsi Umum (LENGKAP)
+- ✅ FASE 2: BAB 3 - Tujuan Pembelajaran (LENGKAP)
+- ✅ FASE 2: BAB 4 - Kompetensi Awal dan Sarana (LENGKAP)
+- ✅ FASE 2: BAB 5 - Pertanyaan Pemantik (LENGKAP)
+- ✅ Semua 12 file Python di docs/kode/ (LENGKAP)
 
-**Next step:** Mulai Fase 2 - Isi BAB 1 Identitas Modul
+**Next step:** 
+1. **PRIORITAS TINGGI:** Isi BAB 7 (Latihan dan Tugas) - 4 latihan
+2. Isi BAB 8 & 9 (Catatan Penilaian & Referensi)
+3. Isi BAB 6.2-6.11 (skip 6.1) - Materi Pembelajaran
+4. Lampiran (opsional)
